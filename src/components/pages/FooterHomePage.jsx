@@ -4,25 +4,38 @@ import styled from 'styled-components';
 export default function FooterHomePage() {
     return (
         <FooterHomePageStyled>
-            <div>Invest with us</div>
-            <div><span>for a decentralized</span></div>
-            <div><span>and prosperous future</span></div>
+            <div className='div-content'>
+                <div>Invest with us</div>
+                <div><span>for a decentralized</span></div>
+                <div><span>and prosperous future</span></div>
+            </div>
         </FooterHomePageStyled>
     );
 }
 
 const FooterHomePageStyled = styled.div`
+
     background-color: #1b2030;
     flex: 0.35;
     text-align: center;
-    font-size: 32px;
-    color: #555;
+    font-size: 40px;
+    color: #FF9F1B;
     overflow: hidden;
+    display: flex;
+
+    .div-content{
+
+        justify-content: center;
+        align-items: center;
+    }
+    
 
     div {
         display: inline-block;
         overflow: hidden;
         white-space: nowrap;
+        text-align: center;  // Centre le texte dans chaque div
+        margin: auto;
     }
 
     div:first-of-type {

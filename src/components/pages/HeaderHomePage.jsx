@@ -2,12 +2,12 @@ import React from 'react'
 import styled from 'styled-components'
 
 export default function HeaderHomePage() {
-    return (
-        <HeaderHomePageStyled>
-            <button>Launch App</button>
+  return (
+    <HeaderHomePageStyled>
+      <button>Launch App</button>
 
-        </HeaderHomePageStyled>
-    )
+    </HeaderHomePageStyled>
+  )
 }
 
 const HeaderHomePageStyled = styled.div`
@@ -22,6 +22,7 @@ const HeaderHomePageStyled = styled.div`
   background-repeat: no-repeat;
 
   button {
+font-size: 15px;
 background: #FF9F1B;
 width: 100px;
 height: 30px;
@@ -30,7 +31,6 @@ top: 30px;
 right: 60px;
 border-radius: 8px;
 border: 1px solid #FF9F1B;
-font-size: 1em;
 font-weight: 500;
 font-family: inherit;
 cursor: pointer;
