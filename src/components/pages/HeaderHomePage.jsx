@@ -1,10 +1,18 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components'
 
 export default function HeaderHomePage() {
+
+  const navigate = useNavigate()
+
+  const handleClick = () => {
+    navigate('/dashboard')
+  }
+
   return (
     <HeaderHomePageStyled>
-      <button>Launch App</button>
+      <button onClick={handleClick}>Launch App</button>
 
     </HeaderHomePageStyled>
   )
